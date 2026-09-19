@@ -20,7 +20,7 @@ public class BiomeTintedIce {
 
     public BiomeTintedIce(IEventBus modEventBus, ModContainer modContainer) {
         //modEventBus.addListener(this::commonSetup);
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        modContainer.registerConfig(ModConfig.Type.CLIENT, Config.SPEC);
         modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
     }
 }

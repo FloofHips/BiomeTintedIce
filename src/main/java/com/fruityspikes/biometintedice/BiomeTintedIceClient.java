@@ -22,7 +22,7 @@ import static com.fruityspikes.biometintedice.Config.COLOR_INTENSITY;
 @Mod.EventBusSubscriber(modid = BiomeTintedIce.MODID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BiomeTintedIceClient {
     public static SimplexNoise noise = new SimplexNoise(new XoroshiroRandomSource(67));
-    private static float lastIntensity = -1;
+    private static float lastIntensity = -2;
 
     @SubscribeEvent
     public static void onConfigReload(ModConfigEvent.Reloading event) {
